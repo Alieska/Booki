@@ -58,6 +58,38 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 61.09px;
+    height: 19px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+li{
+    margin: 5px;
+}
+
+li:hover{
+   border-top:2px solid #0065FC; 
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
