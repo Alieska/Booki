@@ -30,8 +30,16 @@ a {
     text-decoration: none;
 }
 
+h1{
+    padding-top: 30px;
+}
+
+p{
+    font-size: 16px;
+}
+
 .section-title {
-    margin: 0;
+    margin: 0px;
     font-size: 22px;
 }
 
@@ -58,36 +66,130 @@ a {
     color: var(--main-bg-color)
 }
 
+.information{
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+}
+
+.fa-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: 1px  solid var(--main-color);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+h2{
+color: #000;
+font-size: 17px;
+font-weight: 700;
+}
+
 /****** Header ***********/
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     width: 61.09px;
     height: 19px;
+    margin: 20px 0px 10px 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a{
+    margin-right:15px;
+}
+
+a:hover{
+   border-top:2px solid var(--main-color); 
+}
+
+.actual-nav{
+    color: var(--main-color);
+}
+
+/****** Form ***********/
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: 20px;
 }
 
-ul {
-    list-style-type: none;
+.fa-location-dot{
+    color: black;
+    border: 1px var(--main-bg-color) solid;
+    border-radius: 15px 0px 0px 15px;
+    background-color: var(--main-bg-color);
+    padding: 17px;
+}
+
+.ville{
+    border: 1px var(--main-bg-color) solid;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px;
+}
+.rechercher {
+    height: 49px;
+    padding: 15px 16px;
+    gap: 10px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color:#FFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fa-magnifying-glass{
+    color:#FFF;
+    padding: 15px 16px;
+    gap: 10px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    display: none;
+}
+
+/****** Filtres ***********/
+
+.filtres{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bouton-filtre{
     display: flex;
     flex-direction: row;
-    font-family: Raleway;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
+    height: 50px;
+    padding: 0px 19px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid #d9d9d9;
+    margin-left: 15px;
 }
 
-li{
-    margin: 5px;
-}
-
-li:hover{
-   border-top:2px solid #0065FC; 
+.bouton-filtre:hover{
+    background-color: var(--filter-bg-color);
 }
 
 /****** Hebergements And Populaires ***********/
@@ -153,9 +255,6 @@ li:hover{
     margin-bottom: 5px;
 }
 
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -191,9 +290,25 @@ li:hover{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .filtres{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
-    /* ... */
+header{
+    flex-direction: column;
+    }
+
+.rechercher{
+    display: none;
+}
+
+.fa-magnifying-glass{
+    display: flex;
+}
 }
