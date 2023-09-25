@@ -47,7 +47,7 @@ p{
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 }
 
 .card img {
@@ -206,6 +206,7 @@ form{
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -238,11 +239,11 @@ form{
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    margin: 33px 10px 0px 0px;
+    margin: 33px 5px 0px 0px;
 }
 
 .hebergements-cards img {
-    width: 200px;
+    width: 250px;
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -266,6 +267,11 @@ form{
 
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
+}
+
+.afficher-plus{
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /****** Populaires ***********/
