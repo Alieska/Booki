@@ -38,6 +38,11 @@ p{
     font-size: 16px;
 }
 
+.bold-text{
+    font-size: 18px;
+    font-weight: 700;  
+}
+
 .section-title {
     margin: 0px;
     font-size: 22px;
@@ -85,8 +90,6 @@ p{
 
 h2{
 color: #000;
-font-size: 17px;
-font-weight: 700;
 }
 
 /****** Header ***********/
@@ -145,8 +148,6 @@ form{
 .ville{
     border: 1px var(--main-bg-color) solid;
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
     padding: 14px;
 }
 .rechercher {
@@ -157,8 +158,6 @@ form{
     border: 1px solid var(--main-color);
     background: var(--main-color);
     color:#FFF;
-    font-size: 18px;
-    font-weight: 700;
 }
 
 .fa-magnifying-glass{
@@ -199,6 +198,11 @@ form{
     border-radius: 25px;
     border: 2px solid #d9d9d9;
     margin: 10px 15px 10px 0px;
+}
+
+.nom-filtre{
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .bouton-filtre:hover{
@@ -271,8 +275,6 @@ form{
 }
 
 .afficher-plus{
-    font-size: 18px;
-    font-weight: 700;
     margin-top: 20px;
 }
 
@@ -370,11 +372,6 @@ ul{
     list-style-type: none;
     width: 100%;
     padding-top: 3px;
-}
-
-.footer-title{
-    font-size: 18px;
-    font-weight: 700;
 }
 
 li{
