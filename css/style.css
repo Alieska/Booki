@@ -160,13 +160,19 @@ form{
     border: 1px var(--main-bg-color) solid;
     border-radius: 15px 0px 0px 15px;
     background-color: var(--main-bg-color);
-    padding: 17px;
+    height: 49px;
+    width: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ville{
     border: 1px var(--main-bg-color) solid;
     text-align: center;
-    padding: 14px;
+    height: 49px;
+    margin: 0px;
+    padding: 0px;
 }
 .rechercher {
     height: 49px;
@@ -179,7 +185,8 @@ form{
 
 .fa-magnifying-glass{
     color:#FFF;
-    padding: 15px 16px;
+    height: 49px;
+    width: 49px;
     border-radius: 0px 15px 15px 0px;
     border: 1px solid var(--main-color);
     background: var(--main-color);
@@ -191,10 +198,10 @@ form{
 .filtres{
     display:flex;
     flex-direction: row;
+    gap: 15px;
 }
 
 .titre-filtre{
-    margin:10px 15px 0px 0px;
     display: flex;
     align-items: center;
 }
@@ -202,6 +209,7 @@ form{
 .liste-filtre{
     display: flex;
     flex-flow: row wrap;
+    gap:15px;
 }
 
 .bouton-filtre{
@@ -213,7 +221,6 @@ form{
     gap: 10px;
     border-radius: 25px;
     border: 2px solid #d9d9d9;
-    margin: 10px 15px 10px 0px;
 }
 
 .nom-filtre{
@@ -261,13 +268,17 @@ form{
 .hebergements-cards{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: stretch;
     gap:30px;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 0px;
+    gap: 4px;
+    flex: 1 0 0;
 }
 
 .hebergements-cards a{
@@ -284,17 +295,19 @@ form{
 .hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
     box-sizing: border-box;
-    padding: 0px 15px;
-    margin-bottom: 15px;
+    padding: 0px 15px 15px 15px;
+    gap: 8px;
 }
 
 .hebergements-cards .card-title {
-    margin-top: 4px;
+    margin: 4px 0px 0px 0px;
 }
 
 .hebergements-cards .card-subtitle{
-    margin: 8px 0px;
+    margin: 8px 0px 0px 0px;
 }
 
 /****** Populaires ***********/
@@ -307,6 +320,11 @@ form{
     width: 32%;
 }
 
+.populaires-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 .populaires-title {
     display: flex;
@@ -317,7 +335,6 @@ form{
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 30px;
 }
 
 .populaires-cards img {
@@ -368,9 +385,13 @@ form{
 }
 
 .activites-cards a{
-    padding: 20px 20px 0px 0px;
     width: 100%;
 }
+
+.activites-cards .card{
+    height: 439px;
+}
+
 .activites-cards img {
     width: 100%;
     height: 380px;
@@ -380,6 +401,7 @@ form{
 
 .activites-cards .card-title {
     padding: 20px 19px;
+    margin: 0px;
 }
 
 /****** Footer ***********/
@@ -389,8 +411,10 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-self: stretch;
     font-size: 16px;
     font-weight: 400;
+    gap: 30px;
     padding: 20px;
 }
 
@@ -410,12 +434,12 @@ ul{
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .filtres{
-        display: flex;
         flex-direction: column;
     }
 
     .hebergements-and-populaires {
         flex-direction: column;
+        gap: 50px;
     }
 
     .hebergements {
@@ -424,13 +448,13 @@ ul{
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        gap: 20px;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 20px;
     }
 
     .populaires-cards a {
@@ -444,9 +468,16 @@ ul{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activites-cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 0 0;
+    height: 259px
+    }
 
     .activites-cards img {
-        width: 100%;
         height: 200px;
     }
 }
@@ -487,6 +518,8 @@ nav{
 
 .fa-magnifying-glass{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hebergements-and-populaires{
