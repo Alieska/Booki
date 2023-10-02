@@ -153,6 +153,7 @@ form{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background: var(--White, #FFF);
 }
 
 .fa-location-dot{
@@ -168,11 +169,11 @@ form{
 }
 
 .ville{
-    border: 1px var(--main-bg-color) solid;
     text-align: center;
     height: 49px;
     margin: 0px;
     padding: 0px;
+    border: 1px solid var(--Grey, #F2F2F2);
 }
 .rechercher {
     height: 49px;
@@ -187,10 +188,11 @@ form{
     color:#FFF;
     height: 49px;
     width: 49px;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 15px;
     border: 1px solid var(--main-color);
     background: var(--main-color);
     display: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /****** Filtres ***********/
@@ -435,6 +437,7 @@ ul{
 @media (max-width: 1024px) {
     .filtres{
         flex-direction: column;
+        gap: 20px;
     }
 
     .hebergements-and-populaires {
@@ -512,6 +515,14 @@ nav{
     border-bottom: 2px solid var(--main-color);
 }
 
+.intro{
+    padding: 0px 20px;
+}
+
+.ville{
+    width: 70%;
+}
+
 .rechercher{
     display: none;
 }
@@ -522,25 +533,64 @@ nav{
     align-items: center;
 }
 
+.filtres{
+    gap: 20px;
+}
+
+.liste-filtre{
+    gap: 10px;
+}
+
+.bouton-filtre{
+    width:130px
+}
+
 .hebergements-and-populaires{
     flex-direction: column-reverse;
     padding: 0px;
+    width: 100%;
+    gap: 15px;
+}
+
+.hebergements-and-populaires .populaires{
+    border-radius: 0px;
+    padding: 30px 20px;
+}
+
+.hebergements-and-populaires .hebergements{
+    background-color: white;
+    border-radius: 0px;
+    padding: 20px;
+    gap:15px;
 }
 
 .hebergements{
-    background-color: white;
+    max-width: fit-content;
 }
 
 .hebergements-cards{
     flex-direction: column;
+    align-self: stretch;
+    gap: 15px;
+}
+
+.hebergements-cards img{
+    align-self: stretch;
 }
 
 .hebergements-cards a{
     width: 100%;
 }
 
+.populaires{
+    gap: 15px;
+    max-width: fit-content;
+}
+
 .populaires-cards{
     flex-direction: column;
+    align-self: stretch;
+    gap: 15px;
 }
 
 .populaires-cards a{
@@ -548,15 +598,27 @@ nav{
 }
 
 .Activités{
-    padding: 0px;
+    padding: 30px;
 }
 
 .activites-cards{
     flex-direction: column;
 }
 
+.activites-cards .card{
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: fit-content;
+}
+
+.activites-cards img{
+    height: 141px;
+}
+
 footer{
     flex-direction: column;
+    gap: 50px;
+    padding: 30px;
 }
 
 ul{
