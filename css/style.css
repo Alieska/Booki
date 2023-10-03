@@ -149,7 +149,7 @@ nav{
 
 /****** Form ***********/
 
-form{
+.recherche-ville{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -533,7 +533,7 @@ nav{
     padding: 0px 20px;
 }
 
-form{
+.recherche-ville{
     border: 1px solid var(--Grey, #F2F2F2);
     border-radius: 15px;
     width: fit-content;
