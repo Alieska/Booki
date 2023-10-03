@@ -149,7 +149,7 @@ nav{
 
 /****** Form ***********/
 
-form{
+.recherche-ville{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -344,6 +344,7 @@ form{
 .populaires-cards .card {
     display: flex;
     align-self: stretch;
+    width: 100%;
 }
 
 .populaires-cards img {
@@ -379,9 +380,7 @@ form{
 .Activités {
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 30px;
-    box-sizing: border-box;
 }
 
 .activites-cards {
@@ -393,18 +392,19 @@ form{
 
 .activites-cards a{
     display: flex;
-    width: 100%;
+    width: 22%;
+    flex:1 0 0;
 }
 
 .activites-cards .card{
-    height: 439px;
+    height: auto;
     align-self: stretch;
+    flex: 1 0 0;
 }
 
 .activites-cards img {
     width: 100%;
     height: 380px;
-
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -533,8 +533,15 @@ nav{
     padding: 0px 20px;
 }
 
+.recherche-ville{
+    border: 1px solid var(--Grey, #F2F2F2);
+    border-radius: 15px;
+    width: fit-content;
+}
+
 .ville{
     width: 70%;
+    border: none;
 }
 
 .rechercher{
@@ -617,6 +624,10 @@ nav{
 
 .activites-cards{
     flex-direction: column;
+}
+
+.activites-cards a{
+   width: 100%;
 }
 
 .activites-cards .card{
