@@ -387,7 +387,7 @@ form{
 .activites-cards {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 30px;
     margin-top: 30px;
 }
 
@@ -404,6 +404,7 @@ form{
 .activites-cards img {
     width: 100%;
     height: 380px;
+
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -473,7 +474,7 @@ ul{
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 32%;
     }
 
     .populaires-cards .card-title {
@@ -555,7 +556,7 @@ nav{
 }
 
 .bouton-filtre{
-    width:130px
+    width:121px
 }
 
 .hebergements-and-populaires{
@@ -577,8 +578,9 @@ nav{
     gap:15px;
 }
 
-.hebergements{
-    max-width: fit-content;
+.card
+{
+    width: 100%;
 }
 
 .hebergements-cards{
@@ -597,7 +599,6 @@ nav{
 
 .populaires{
     gap: 15px;
-    max-width: fit-content;
 }
 
 .populaires-cards{
